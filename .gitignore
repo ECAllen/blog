@@ -12,3 +12,11 @@
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
+
+# Buffalo specific
+.buffalo.dev.yml
+.codeclimate.yml
+node_modules/*
+public/assets/*
+tmp/
+vendor/
