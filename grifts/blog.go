@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 )
 
-var _ = Add("notes", func(c *Context) error {
-	dir := "templates/notes/"
-	lib.Prefix = dir
+var _ = Add("blog", func(c *Context) error {
+	dir := "templates/blog-posts/posts"
+	lib.Prefix = "templates/"
 	err := filepath.Walk(dir, lib.PrintFile)
 	if err != nil {
 		fmt.Println(err)
