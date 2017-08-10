@@ -1,6 +1,24 @@
 
 <div class="row">
-
-
-
+	<div class="col-md-6">
+		<h2>Blog in Clojure/Clojurescript</h2>
+		<p><a href="blog-posts/posts/"></a></p>
+		<p><a href="blog-posts/posts/clojurescript-blog-in-10-minutes.md ">Clojurescript Blog in 10 Minutes</a></p>
+		<p><a href="blog-posts/posts/add-blog-menu.md">Blog Menu</a></p>
+		<p><a href="blog-posts/posts/add-marginalia.md">Add Marginalia to Blog</a></p>
+		<p><a href="blog-posts/posts/add-highlight-blog.md">Add Javascript Code Highlighting to Blog</a></p>
+		<p><a href="blog-posts/posts/deploying-blog.md">Deploying Blog</a></p>
+	</div>
+	<div class="col-md-6">
+		<h2>Videos</h2>
+		<h3>Go/Buffalo</h3>
+		<% let vposts = ["2jC9pre1q_Q", "u92-Nh1h5BA"] %>
+		<%= for (vpost) in vposts { %>
+		<div class="embed-responsive embed-responsive-16by9">     
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<%= vpost %>"></iframe>
+		</div>
+		<br>
+		<br>
+		<% } %>
+	</div>
 </div>

@@ -46,6 +46,10 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		app.GET("/blog-posts/posts/{post}", func(c buffalo.Context) error {
+			return c.Render(200, r.HTML("blog-posts/posts/"+c.Param("post")))
+		})
+
 		app.ServeFiles("/assets", packr.NewBox("../public/assets"))
 	}
 
